@@ -52,13 +52,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <div class="content-right">
         <div class="content1">
           <h1 style="font-size: 80px;"><b>MDIT X DvD 2023</b></h1>
-          <h2>MALAYSIA DATA INNOVATION TALENT</h2>
+          <h2 style="margin-bottom:-2.5%;">MALAYSIA DATA INNOVATION TALENT</h2>
           <h2 style="font-size: 35px"><b>X</b></h2>
-          <h2>DOSM VIRTUAL DATATHON 2023</h2>
-          <h3 style="color:white; padding: 30px; font-style: bold; word-spacing: 2%;">Smart Data Empower Malaysia's Sustainable Future</h3>
-            <button class="learnmore" onclick="learnmore()">
+          <h2 style="margin-top:-2.5%;">DOSM VIRTUAL DATATHON 2023</h2>
+          <h3 style="color:white; padding: 30px;"><b>Smart Data Empower Malaysia's Sustainable Future</b></h3>
+            <a class="learnmore" href="#about">
               LEARN MORE
-            </button>
+            </a>
         </div>
         <span class="robo-hand"></span>
       </div>
@@ -129,6 +129,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </html>
 
 <style>
+  html{
+    scroll-behavior: smooth;
+  }
+
+
   p{
     font-size: 20px;
   }
@@ -150,7 +155,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   }
 
   .content-right:hover{
-    background-color: #9045f194;
+    background-color: #8f45f14b;
     color: white;
   }
 
@@ -191,7 +196,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   .border{
     content:url("././sources/border.png");
     width: 600px;
-    top: -50px;
+    top: -20px;
     left: 0px;
     position: fixed;
     transition: width 0.2s;
@@ -223,13 +228,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     background-color: #7C2AE8;
     border: rgba(255, 255, 255, 0);
     border-radius: 35px;
-    height: 60px;
-    width: 210px;
+    height: auto;
+    width: auto;
     color: white;
     font-size: 20px;
     font-style: bold;
     transition: background-color 0.5s, color 0.5s;
-    padding: 6px;
+    padding: 25px;
+    text-decoration:none;
   }
 
   .learnmore:hover{
@@ -249,10 +255,109 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 </style>
 <script>
-  function learnmore(){
+  
+  function gotolink(){
     window.open("https://www.w3schools.com");
   }
 
+  window.onload=function(){
+    init();
+    smoothscrollHREF();
+  }
 
+  function init(){
+	    new SmoothScroll(document,120,12)
+  }
 
+  function smoothscrollHREF(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 500, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+    });
+  }
+
+  function SmoothScroll(target, speed, smooth) {
+          if (target === document)
+            target = (document.scrollingElement 
+                      || document.documentElement 
+                      || document.body.parentNode 
+                      || document.body) // cross browser support for document scrolling
+              
+          var moving = false
+          var pos = target.scrollTop
+          var frame = target === document.body 
+                      && document.documentElement 
+                      ? document.documentElement 
+                      : target // safari is the new IE
+          
+          target.addEventListener('mousewheel', scrolled, { passive: false })
+          target.addEventListener('DOMMouseScroll', scrolled, { passive: false })
+
+        function scrolled(e) {
+            e.preventDefault(); // disable default scrolling
+
+            var delta = normalizeWheelDelta(e)
+
+            pos += -delta * speed
+            pos = Math.max(0, Math.min(pos, target.scrollHeight - frame.clientHeight)) // limit scrolling
+
+            if (!moving) update()
+        }
+
+          function normalizeWheelDelta(e){
+            if(e.detail){
+              if(e.wheelDelta)
+                return e.wheelDelta/e.detail/40 * (e.detail>0 ? 1 : -1) // Opera
+              else
+                return -e.detail/3 // Firefox
+            }else
+              return e.wheelDelta/120 // IE,Safari,Chrome
+          }
+          
+          function update() {
+              moving = true
+              
+              var delta = (pos - target.scrollTop) / smooth
+              
+              target.scrollTop += delta
+              
+              if (Math.abs(delta) > 0.5)
+                requestFrame(update)
+              else
+                moving = false
+          }
+
+            var requestFrame = function() { // requestAnimationFrame cross browser
+              return (
+                window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimationFrame ||
+                function(func) {
+                  window.setTimeout(func, 1000 / 50);
+                }
+              );
+            }()
+}
+  
+
+  
 </script>
