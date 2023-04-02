@@ -47,25 +47,25 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div>
 
   <!-- About Section -->
-  <div class="container w3-hide-small" id="about">
+  <div class="container w3-hide-small" id="#">
     <div class="outer-container">
       <div class="content-right">
         <div class="content1">
-          <h1 style="font-size: 70px;"><b>MDIT X DvD 2023</b></h1>
-          <h2 class>MALAYSIA DATA INNOVATION TALENT</h2>
-          <h2>X</h2>
+          <h1 style="font-size: 80px;"><b>MDIT X DvD 2023</b></h1>
+          <h2>MALAYSIA DATA INNOVATION TALENT</h2>
+          <h2 style="font-size: 35px"><b>X</b></h2>
           <h2>DOSM VIRTUAL DATATHON 2023</h2>
+          <h3 style="color:white; padding: 30px; font-style: bold; word-spacing: 2%;">Smart Data Empower Malaysia's Sustainable Future</h3>
+            <button class="learnmore">
+              LEARN MORE
+            </button>
         </div>
-        
         <span class="robo-hand"></span>
-
       </div>
     </div>
       
   </div>
 
-
-  
 
 <!-- mobile version-->
 
@@ -82,26 +82,28 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 </div>
 
-<div class="container w3-hide-large w3-hide-medium" id="about">
+<div class="container w3-hide-large w3-hide-medium" id="#">
   <div class="content-right">
     <div class="content-mobile">
       <h1><b>MDIT X DvD 2023</b></h1>
       <h2 class>MALAYSIA DATA INNOVATION TALENT</h2>
       <h2>X</h2>
       <h2>DOSM VIRTUAL DATATHON 2023</h2>
+      <h2 style="color:white;">Smart Data Empower Malaysia's Sustainable Future</h2>
     </div>
-  
   </div>
 </div>
 
-<div class="container" id="contact">
-    <div class="content-right">
-      <h2>My Name</h2>
-      <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<div class="container" id="about">
+  <div class="outer-container">
+    <div class="content-right2">
+      <h2><b>What is MDIT X DvD 2023 ?</b></h2>
+      <p>Malaysia Data Innovation Talent x DOSM Virtual Datathon 2023 (MDIT x DvD 2023) is a national competition for students from IPTA and IPTS held once every two years to explore and sharpen participants skills in data innovation. MDIT x DvD 2023 focuses on enhancing the use of big data, encouraging participant's critical thinking in data analysis and problem- solving. Participants from various disciplines will work on open data projects and showcase data analysis skills and talents. MDIT x DVD 2023 serves as a pedestal for students to collaborate and engage with diverse stakeholders to impact Sustainable Development Goals (SDGs) progress significantly.
       </p>
+      <p>We welcome the energetic, ambitious, creative, and innovative participants to join us today!</p>
     </div>
+  </div>
+    
 </div>
 
 
@@ -118,19 +120,37 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </html>
 
 <style>
+  p{
+    font-size: 20px;
+  }
+
   .container{
     background-image: url("././sources/background.png");
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
   }
+  
 
   .content-right{
+    background-color: rgba(0, 0, 0, 0.082);
     box-sizing: content-box;
     margin-left: 25%;
     margin-top: 10%;
-    width: 60%;
+    width: 69%;
     top: 10%;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .content-right2{
+    background-color: rgba(0, 0, 0, 0.082);
+    box-sizing: content-box;
+    margin-left: 25%;
+    width: 69%;
+    top: 10%;
+    padding: 20px;
+    border-radius: 15px;
   }
 
   .content-mobile{
@@ -166,7 +186,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   .robo-hand{
     content:url("././sources/hand robo.png");
     width: 600px;
-    margin-top: -25%;
+    margin-top: -38%;
     transition: width 1s, transform 1s;
   }
 
@@ -181,9 +201,29 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     margin-left: 40%;
   }
 
-  .content1:hover{
-    font-size: 50%;
+  .learnmore{
+    background-color: #7C2AE8;
+    border: rgba(255, 255, 255, 0);
+    border-radius: 35px;
+    height: 60px;
+    width: 210px;
+    color: white;
+    font-size: 20px;
+    font-style: bold;
+    transition: background-color 0.5s, color 0.5s;
+    padding: 10px;
   }
+
+  .learnmore:hover{
+    background-color: #ac77f1;
+    color: black;
+  }
+
+  .outer-container{
+    padding: 40px;
+  }
+
+  
 
 
 </style>
