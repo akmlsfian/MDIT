@@ -16,11 +16,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 
-<a href="#" class="border w3-small w3-hide-small">
+<a href="#" class="border w3-hide-small">
 </a>
 
-<nav class="nav-bar w3-small w3-hide-small" >
-  <a href="#" class="nav_menu">
+<nav class="nav-bar w3-hide-small" >
+  <a href="#home" class="nav_menu">
     <h1><b>HOME</b></h1>
   </a>
   <a href="#about" class="nav_menu">
@@ -47,8 +47,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div>
 
   <!-- About Section -->
-  <div class="container w3-hide-small" id="#">
-    <div class="outer-container">
+  <div class="container w3-hide-small" id="home">
+    <div class="outer-container-first">
       <div class="content-right">
         <div class="content1">
           <h1 style="font-size: 80px;"><b>MDIT X DvD 2023</b></h1>
@@ -56,16 +56,25 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           <h2 style="font-size: 35px"><b>X</b></h2>
           <h2>DOSM VIRTUAL DATATHON 2023</h2>
           <h3 style="color:white; padding: 30px; font-style: bold; word-spacing: 2%;">Smart Data Empower Malaysia's Sustainable Future</h3>
-            <button class="learnmore">
+            <button class="learnmore" onclick="learnmore()">
               LEARN MORE
             </button>
         </div>
         <span class="robo-hand"></span>
       </div>
     </div>
-      
   </div>
 
+    <div class="container w3-hide-small" id="about">
+      <div class="outer-container">
+        <div class="content-right">
+          <h2><b>What is MDIT X DvD 2023 ?</b></h2>
+          <p>Malaysia Data Innovation Talent x DOSM Virtual Datathon 2023 (MDIT x DvD 2023) is a national competition for students from IPTA and IPTS held once every two years to explore and sharpen participants skills in data innovation. MDIT x DvD 2023 focuses on enhancing the use of big data, encouraging participant's critical thinking in data analysis and problem- solving. Participants from various disciplines will work on open data projects and showcase data analysis skills and talents. MDIT x DVD 2023 serves as a pedestal for students to collaborate and engage with diverse stakeholders to impact Sustainable Development Goals (SDGs) progress significantly.
+          </p>
+          <p>We welcome the energetic, ambitious, creative, and innovative participants to join us today!</p>
+        </div>
+      </div>
+    </div>
 
 <!-- mobile version-->
 
@@ -83,7 +92,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </div>
 
 <div class="container w3-hide-large w3-hide-medium" id="#">
-  <div class="content-right">
+  
     <div class="content-mobile">
       <h1><b>MDIT X DvD 2023</b></h1>
       <h2 class>MALAYSIA DATA INNOVATION TALENT</h2>
@@ -91,19 +100,19 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <h2>DOSM VIRTUAL DATATHON 2023</h2>
       <h2 style="color:white;">Smart Data Empower Malaysia's Sustainable Future</h2>
     </div>
-  </div>
 </div>
 
-<div class="container" id="about">
-  <div class="outer-container">
-    <div class="content-right2">
+
+
+<div class="container w3-hide-large w3-hide-medium" id="about">
+  
+    <div class="content-mobile">
       <h2><b>What is MDIT X DvD 2023 ?</b></h2>
       <p>Malaysia Data Innovation Talent x DOSM Virtual Datathon 2023 (MDIT x DvD 2023) is a national competition for students from IPTA and IPTS held once every two years to explore and sharpen participants skills in data innovation. MDIT x DvD 2023 focuses on enhancing the use of big data, encouraging participant's critical thinking in data analysis and problem- solving. Participants from various disciplines will work on open data projects and showcase data analysis skills and talents. MDIT x DVD 2023 serves as a pedestal for students to collaborate and engage with diverse stakeholders to impact Sustainable Development Goals (SDGs) progress significantly.
       </p>
       <p>We welcome the energetic, ambitious, creative, and innovative participants to join us today!</p>
     </div>
-  </div>
-    
+
 </div>
 
 
@@ -127,35 +136,33 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   .container{
     background-image: url("././sources/background.png");
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
   }
   
 
   .content-right{
-    background-color: rgba(0, 0, 0, 0.082);
+    background-color: rgba(0, 0, 0, 0.041);
     box-sizing: content-box;
     margin-left: 25%;
-    margin-top: 10%;
     width: 69%;
-    top: 10%;
     padding: 20px;
     border-radius: 15px;
+    transition: background-color 0.8s, color 0.5s;
   }
 
-  .content-right2{
-    background-color: rgba(0, 0, 0, 0.082);
-    box-sizing: content-box;
-    margin-left: 25%;
-    width: 69%;
-    top: 10%;
-    padding: 20px;
-    border-radius: 15px;
+  .content-right:hover{
+    background-color: #9045f194;
+    color: white;
   }
 
   .content-mobile{
+    top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.219);
     box-sizing: content-box;
-    width: 60%;
+    width: 90%;
+    padding: 15px;
+    border-radius: 15px;
   }
 
   .nav-bar{
@@ -171,8 +178,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   .nav_menu{
     padding: 2px;
-    font-size: 2px;
     text-decoration:none;
+    transition: color 0.2s, text-shadow 0.2s;
+  }
+
+  .nav_menu:hover{
+    rotate: 5%;
+    text-shadow: 5px 5px #000000ad;
+    color: rgb(255, 255, 255);
   }
 
   .border{
@@ -181,6 +194,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     top: -50px;
     left: 0px;
     position: fixed;
+    transition: width 0.2s;
+  }
+
+  .border:hover{
+    width: 620px;
   }
 
   .robo-hand{
@@ -198,7 +216,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   .content1{
     text-align: center;
-    margin-left: 40%;
+    margin-left: 37%;
   }
 
   .learnmore{
@@ -211,7 +229,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     font-size: 20px;
     font-style: bold;
     transition: background-color 0.5s, color 0.5s;
-    padding: 10px;
+    padding: 6px;
   }
 
   .learnmore:hover{
@@ -219,11 +237,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     color: black;
   }
 
-  .outer-container{
-    padding: 40px;
+  .outer-container-first{
+    padding-top: 10%;
+    padding-bottom: 2%;
   }
 
-  
-
+  .outer-container{
+    padding-top: 9%;
+    padding-bottom: 100%;
+  }
 
 </style>
+<script>
+  function learnmore(){
+    window.open("https://www.w3schools.com");
+  }
+
+
+
+</script>
