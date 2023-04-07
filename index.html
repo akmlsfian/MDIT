@@ -7,9 +7,13 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+title1{font-weight: 900;}
 </style>
 </head>
 <body>
@@ -20,10 +24,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </a>
 
 <nav class="nav-bar w3-hide-small" >
-  <a href="#home" class="nav_menu">
+  <a onclick="showhome()" class="nav_menu">
     <h1><b>HOME</b></h1>
   </a>
-  <a href="#about" class="nav_menu">
+  <a onclick="showabout()" class="nav_menu">
     <h1><b>ABOUT</b></h1>
   </a>
   <a href="" class="nav_menu">
@@ -47,73 +51,128 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div>
 
   <!-- About Section -->
-  <div class="container w3-hide-small" id="home">
-    <div class="outer-container-first">
-      <div class="content-right">
-        <div class="content1">
-          <h1 style="font-size: 80px;"><b>MDIT X DvD 2023</b></h1>
-          <h2 style="margin-bottom:-2.5%;">MALAYSIA DATA INNOVATION TALENT</h2>
-          <h2 style="font-size: 35px"><b>X</b></h2>
-          <h2 style="margin-top:-2.5%;">DOSM VIRTUAL DATATHON 2023</h2>
-          <h3 style="color:white; padding: 30px;"><b>Smart Data Empower Malaysia's Sustainable Future</b></h3>
-            <a class="learnmore" href="#about">
-              LEARN MORE
-            </a>
-        </div>
-        <span class="robo-hand"></span>
-      </div>
+
+    <div class="countdown" >
+      <div style="text-align: center; ">The registration is now open until: <a id="countdowntime" style="color:greenyellow; background-color:rgb(63, 63, 63); padding: 8px; border-radius: 5px;" ></a>  </div>
     </div>
+
+
+  <div id="home" style="display:none;">
+      <div class="container w3-hide-small">
+          <div class="background1">
+              <div class="outer-container-first">
+                <div class="content-right">
+                  <div class="content1">
+                    <h1 style="font-size: 80px; font-weight: 2000;"><b>MDIT X DvD 2023</b></h1>
+                    <h2 style="margin-bottom:-2.5%;">MALAYSIA DATA INNOVATION TALENT</h2>
+                    <h2 style="font-size: 35px"><b>X</b></h2>
+                    <h2 style="margin-top:-2.5%;">DOSM VIRTUAL DATATHON 2023</h2>
+                    <h3 style="color:white; padding: 30px;"><b>Smart Data Empower Malaysia's Sustainable Future</b></h3>
+                      <a class="learnmore" onclick="showabout()">
+                        LEARN MORE
+                      </a>
+                  </div>
+                  <span class="robo-hand"></span>
+                </div>
+              </div>
+
+              <div class="outer-container-between">
+                <div class="content-right">
+                  <h2 style="font-size: 40px;"><b>What is MDIT X DvD 2023 ?</b></h2>
+                  <p>Malaysia Data Innovation Talent x DOSM Virtual Datathon 2023 (MDIT x DvD 2023) is a national competition for students from IPTA and IPTS held once every two years to explore and sharpen participants skills in data innovation. MDIT x DvD 2023 focuses on enhancing the use of big data, encouraging participant's critical thinking in data analysis and problem- solving. Participants from various disciplines will work on open data projects and showcase data analysis skills and talents. MDIT x DVD 2023 serves as a pedestal for students to collaborate and engage with diverse stakeholders to impact Sustainable Development Goals (SDGs) progress significantly.
+                  </p>
+                  <p>We welcome the energetic, ambitious, creative, and innovative participants to join us today!</p>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+  <div id="about" style="display:none;">
+      <div class="container2 w3-hide-small">
+        <div class="background2">
+            <div class="outer-container-first">
+              <div class="content-right">
+                  
+                  
+              </div>
+            </div>  
+        </div>
+      </div>
   </div>
 
-    <div class="container w3-hide-small" id="about">
-      <div class="outer-container">
-        <div class="content-right">
-          <h2><b>What is MDIT X DvD 2023 ?</b></h2>
-          <p>Malaysia Data Innovation Talent x DOSM Virtual Datathon 2023 (MDIT x DvD 2023) is a national competition for students from IPTA and IPTS held once every two years to explore and sharpen participants skills in data innovation. MDIT x DvD 2023 focuses on enhancing the use of big data, encouraging participant's critical thinking in data analysis and problem- solving. Participants from various disciplines will work on open data projects and showcase data analysis skills and talents. MDIT x DVD 2023 serves as a pedestal for students to collaborate and engage with diverse stakeholders to impact Sustainable Development Goals (SDGs) progress significantly.
-          </p>
-          <p>We welcome the energetic, ambitious, creative, and innovative participants to join us today!</p>
-        </div>
-      </div>
-    </div>
+    
+    
 
 <!-- mobile version-->
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">PARTNERS</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">EVENT</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">FAQ</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">REGISTRATION</a>
+
+<div class="background-mobile w3-top w3-hide-large w3-hide-medium">
+
+  <div class="countdownmobile">
+    <div style="text-align: center;">The registration is now open until: <br>
+    <a id="countdowntimemobile" style="color:greenyellow; background-color:rgb(63, 63, 63); padding: 5px; border-radius: 5px;" ></a>  </div>
   </div>
-</div>
 
-<div class="container w3-hide-large w3-hide-medium" id="#">
-  
-    <div class="content-mobile">
-      <h1><b>MDIT X DvD 2023</b></h1>
-      <h2 class>MALAYSIA DATA INNOVATION TALENT</h2>
-      <h2>X</h2>
-      <h2>DOSM VIRTUAL DATATHON 2023</h2>
-      <h2 style="color:white;">Smart Data Empower Malaysia's Sustainable Future</h2>
+  <div id="myNavbar">
+    <div class="w3-bar mobile_nav_bar w3-hover-opacity-off w3-center w3-small">
+    <a onclick="showhome()" class="w3-bar-item w3-button" style="width:25% !important" onclick="showhome()">HOME</a>
+    <a onclick="showabout()"class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a  class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    <a  class="w3-bar-item w3-button" style="width:25% !important">PARTNERS</a>
+    <a  class="w3-bar-item w3-button" style="width:25% !important">EVENT</a>
+    <a  class="w3-bar-item w3-button" style="width:25% !important">FAQ</a>
+    <a  class="w3-bar-item w3-button" style="width:38% !important">REGISTRATION</a>
     </div>
-</div>
+  </div>
 
+  <div class="home background1-mobile" style="display:none;">
+   
+      <div class="content-mobile">
+        <h1 style="font-size: 20px; text-align: center; color:black"><b>MDIT</b></h1>
+        <h1 style="font-size: 15px; text-align: center; color:black"><b>X</b></h1>
+        <h1 style="font-size: 20px; text-align: center; color:black"><b>DvD 2023</b></h1>
+        <h2 style="font-size: 15px; text-align: center; color:black">MALAYSIA DATA INNOVATION TALENT</h2>
+        <h2 style="font-size: 10px; text-align: center; color:black">X</h2>
+        <h2 style="font-size: 15px; text-align: center; color:black">DOSM VIRTUAL DATATHON 2023</h2>
+        <h2 style="color:white; font-size: 9px; text-align: center;">Smart Data Empower Malaysia's Sustainable Future</h2>
+        <div style="text-align:center; padding: 10px;">
+          <a class="mobile_learnmore" onclick="showabout()">
+          LEARN MORE
+        </a>
+        </div>
+        
 
+      </div>
+    
 
-<div class="container w3-hide-large w3-hide-medium" id="">
-  
     <div class="content-mobile">
-      <h2><b>What is MDIT X DvD 2023 ?</b></h2>
-      <p>Malaysia Data Innovation Talent x DOSM Virtual Datathon 2023 (MDIT x DvD 2023) is a national competition for students from IPTA and IPTS held once every two years to explore and sharpen participants skills in data innovation. MDIT x DvD 2023 focuses on enhancing the use of big data, encouraging participant's critical thinking in data analysis and problem- solving. Participants from various disciplines will work on open data projects and showcase data analysis skills and talents. MDIT x DVD 2023 serves as a pedestal for students to collaborate and engage with diverse stakeholders to impact Sustainable Development Goals (SDGs) progress significantly.
-      </p>
-      <p>We welcome the energetic, ambitious, creative, and innovative participants to join us today!</p>
+      <h3 style="text-align: center;"><b>What is MDIT X DvD 2023 ?</b></h3>
+      <p class="mobile_text" style="font-size: 15px;">Malaysia Data Innovation Talent x DOSM Virtual Datathon 2023 (MDIT x DvD 2023) is a national competition for students from IPTA and IPTS held once every two years to explore and sharpen participants skills in data innovation. MDIT x DvD 2023 focuses on enhancing the use of big data, encouraging participant's critical thinking in data analysis and problem- solving. Participants from various disciplines will work on open data projects and showcase data analysis skills and talents. MDIT x DVD 2023 serves as a pedestal for students to collaborate and engage with diverse stakeholders to impact Sustainable Development Goals (SDGs) progress significantly.</p>
+      <p class="mobile_text" style="font-size: 15px;">We welcome the energetic, ambitious, creative, and innovative participants to join us today!</p>
     </div>
 
+  </div>
+
+  <div class="about" style="display:none;">
+    <div class="content-mobile">
+      
+
+
+
+
+
+  
+  
+    </div>
+  </div>
+
+  
 </div>
+
+
 
 
   
@@ -138,14 +197,53 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   }
 
   .container{
-    background-image: url("././sources/background.png");
-    background-repeat: no-repeat;
+    width: 100%;
   }
+
+  .container2{
+    background-color: #b994ea;
+
+  }
+
+  .background1{
+    background-image: url("././sources/background.png");
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .background1-mobile{
+    background-image: url("././sources/background.png");
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    
+  }
+
+  .background2{
+    background-color: #88888860;
+    height: 800px;
+    width: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .background-mobile{
+    background-color: rgb(0, 0, 0);
+    color: white;
+  } 
 
   .content-right{
     background-color: rgba(0, 0, 0, 0.041);
     box-sizing: content-box;
-    margin-left: 25%;
+    margin-left: 26%;
     width: 69%;
     padding: 20px;
     border-radius: 15px;
@@ -158,25 +256,24 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   }
 
   .content-mobile{
-    top: 10%;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(0, 0, 0, 0.219);
+    background-color: rgba(0, 0, 0, 0.034);
     box-sizing: content-box;
-    width: 90%;
+    width: 85%;
     padding: 15px;
     border-radius: 15px;
   }
 
   .nav-bar{
     left: 70px;
-    top: 170px;
+    top: 20%;
     position: fixed;
   }
 
   body{
-    overflow: hidden;
-    background-color: #fad02d;
+    height:100%;
+    background-color: #000000;
   }
 
   .nav_menu{
@@ -194,7 +291,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   .border{
     content:url("././sources/border.png");
     width: 600px;
-    top: -20px;
+    top: 10px;
     left: 0px;
     position: fixed;
     transition: width 0.2s;
@@ -241,6 +338,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     color: black;
   }
 
+  .outer-container-between{
+    padding-top: 3%;
+    padding-bottom: 5%;
+  }
+
   .outer-container-first{
     padding-top: 10%;
     padding-bottom: 2%;
@@ -248,7 +350,49 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   .outer-container{
     padding-top: 9%;
-    padding-bottom: 100%;
+    padding-bottom: 20%;
+  }
+
+  .mobile_nav_bar{
+    background-color: #7c2ae870;
+  }
+
+  .mobile_text{
+    font-size: 15px;
+  }
+
+  .mobile_learnmore{
+    background-color: #7C2AE8;
+    border: rgba(255, 255, 255, 0);
+    border-radius: 35px;
+    color: white;
+    font-size: 10px;
+    font-style: bold;
+    transition: background-color 0.5s, color 0.5s;
+    padding: 12px;
+    text-decoration:none;
+
+  }
+
+  .mobile_learnmore:hover{
+    background-color: #ac77f1;
+    color: black;
+  }
+
+  .countdown{
+    top:0%;
+    background-color: #ac77f1;
+    width:100%;
+    color:white;
+    padding: 15px;
+    position: fixed;
+  }
+
+  .countdownmobile{
+    background-color: rgba(0, 0, 0, 0.993);
+    color:white;
+    padding: 10px;
+    font-size: 12px;
   }
 
 </style>
@@ -256,6 +400,130 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   
   function gotolink(){
     window.open("https://www.w3schools.com");
+  }
+
+  window.onload=function(){
+    showhome();
+    CD();
+  }
+
+  function CD(){
+    var countDownDate = new Date("Oct 1, 2023").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="demo"
+      document.getElementById("countdowntime").innerHTML = days + "D : " + hours + "H : "
+      + minutes + "M : " + seconds + "S ";
+      document.getElementById("countdowntimemobile").innerHTML = days + "D : " + hours + "H : "
+      + minutes + "M : " + seconds + "S ";
+      
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  }
+
+  function showhome(){
+    $('#home').show();
+    $('#about').hide();
+    $('#contact').hide();
+    $('#partners').hide();
+    $('#event').hide();
+    $('#FAQ').hide();
+    $('#registration').hide();
+
+    $('.home').show();
+    $('.about').hide();
+    $('.contact').hide();
+    $('.partners').hide();
+    $('.event').hide();
+    $('.FAQ').hide();
+    $('.registration').hide();
+  }
+
+  function showabout(){
+    $('#about').show();
+    $('#home').hide();
+    $('#contact').hide();
+    $('#partners').hide();
+    $('#event').hide();
+    $('#FAQ').hide();
+    $('#registration').hide();
+
+    $('.home').hide();
+    $('.about').show();
+    $('.contact').hide();
+    $('.partners').hide();
+    $('.event').hide();
+    $('.FAQ').hide();
+    $('.registration').hide();
+  }
+
+  function showcontact(){
+    $('#about').hide();
+    $('#home').hide();
+    $('#contact').show();
+    $('#partners').hide();
+    $('#event').hide();
+    $('#FAQ').hide();
+    $('#registration').hide();
+  }
+
+  function showpartners(){
+    $('#about').hide();
+    $('#home').hide();
+    $('#contact').hide();
+    $('#partners').show();
+    $('#event').hide();
+    $('#FAQ').hide();
+    $('#registration').hide();
+  }
+
+  function showevent(){
+    $('#about').hide();
+    $('#home').hide();
+    $('#contact').hide();
+    $('#partners').hide();
+    $('#event').show();
+    $('#FAQ').hide();
+    $('#registration').hide();
+  }
+
+  function showFAQ(){
+    $('#about').hide();
+    $('#home').hide();
+    $('#contact').hide();
+    $('#partners').hide();
+    $('#event').hide();
+    $('#FAQ').show();
+    $('#registration').hide();
+  }
+
+  function showregistration(){
+    $('#about').hide();
+    $('#home').hide();
+    $('#contact').hide();
+    $('#partners').hide();
+    $('#event').hide();
+    $('#FAQ').hide();
+    $('#registration').show();
   }
 
   
