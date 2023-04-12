@@ -14,181 +14,18 @@
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 title1{font-weight: 900;}
-</style>
-</head>
-<body>
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
+.mobile_only{
+  display:none;
+}
 
-<a href="#" class="border w3-hide-small">
-</a>
+@media screen and (max-width: 780px) {
+  .mobile_only{
+    display: block;
+  }
+}
 
-<nav class="nav-bar w3-hide-small" >
-  <a onclick="showhome()" class="nav_menu">
-    <h1><b>HOME</b></h1>
-  </a>
-  <a onclick="showabout()" class="nav_menu">
-    <h1><b>ABOUT</b></h1>
-  </a>
-  <a href="" class="nav_menu">
-    <h1><b>CONTACT</b></h1>
-  </a>
-  <a href="" class="nav_menu">
-    <h1><b>PARTNERS</b></h1>
-  </a>
-  <a href="" class="nav_menu">
-    <h1><b>EVENT</b></h1>
-  </a>
-  <a href="" class="nav_menu">
-    <h1><b>FAQ</b></h1>
-  </a>
-  <a href="" class="nav_menu">
-    <h1><b>REGISTRATION</b></h1>
-  </a>
-</nav>
-
-<!-- Page Content -->
-<div>
-
-  <!-- About Section -->
-
-    <div class="countdown" >
-      <div style="text-align: center; ">The registration is now open until: <a id="countdowntime" style="color:greenyellow; background-color:rgb(63, 63, 63); padding: 8px; border-radius: 5px;" ></a>  </div>
-    </div>
-
-
-  <div id="home" style="display:none;">
-      <div class="container w3-hide-small">
-          <div class="background1">
-              <div class="outer-container-first">
-                <div class="content-right">
-                  <div class="content1">
-                    <h1 style="font-size: 80px; font-weight: 2000;"><b>MDIT X DvD 2023</b></h1>
-                    <h2 style="margin-bottom:-2.5%;">MALAYSIA DATA INNOVATION TALENT</h2>
-                    <h2 style="font-size: 35px"><b>X</b></h2>
-                    <h2 style="margin-top:-2.5%;">DOSM VIRTUAL DATATHON 2023</h2>
-                    <h3 style="color:white; padding: 30px;"><b>Smart Data Empower Malaysia's Sustainable Future</b></h3>
-                      <a class="learnmore" onclick="showabout()">
-                        LEARN MORE
-                      </a>
-                  </div>
-                  <span class="robo-hand"></span>
-                </div>
-              </div>
-
-              <div class="outer-container-between">
-                <div class="content-right">
-                  <h2 style="font-size: 40px;"><b>What is MDIT X DvD 2023 ?</b></h2>
-                  <p>Malaysia Data Innovation Talent x DOSM Virtual Datathon 2023 (MDIT x DvD 2023) is a national competition for students from IPTA and IPTS held once every two years to explore and sharpen participants skills in data innovation. MDIT x DvD 2023 focuses on enhancing the use of big data, encouraging participant's critical thinking in data analysis and problem- solving. Participants from various disciplines will work on open data projects and showcase data analysis skills and talents. MDIT x DVD 2023 serves as a pedestal for students to collaborate and engage with diverse stakeholders to impact Sustainable Development Goals (SDGs) progress significantly.
-                  </p>
-                  <p>We welcome the energetic, ambitious, creative, and innovative participants to join us today!</p>
-                </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  
-
-  <div id="about" style="display:none;">
-      <div class="container2 w3-hide-small">
-        <div class="background2">
-            <div class="outer-container-first">
-              <div class="content-right">
-                  
-                  
-              </div>
-            </div>  
-        </div>
-      </div>
-  </div>
-
-    
-    
-
-<!-- mobile version-->
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-
-<div class="background-mobile w3-top w3-hide-large w3-hide-medium">
-
-  <div class="countdownmobile">
-    <div style="text-align: center;">The registration is now open until: <br>
-    <a id="countdowntimemobile" style="color:greenyellow; background-color:rgb(63, 63, 63); padding: 5px; border-radius: 5px;" ></a>  </div>
-  </div>
-
-  <div id="myNavbar">
-    <div class="w3-bar mobile_nav_bar w3-hover-opacity-off w3-center w3-small">
-    <a onclick="showhome()" class="w3-bar-item w3-button" style="width:25% !important" onclick="showhome()">HOME</a>
-    <a onclick="showabout()"class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a  class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-    <a  class="w3-bar-item w3-button" style="width:25% !important">PARTNERS</a>
-    <a  class="w3-bar-item w3-button" style="width:25% !important">EVENT</a>
-    <a  class="w3-bar-item w3-button" style="width:25% !important">FAQ</a>
-    <a  class="w3-bar-item w3-button" style="width:38% !important">REGISTRATION</a>
-    </div>
-  </div>
-
-  <div class="home background1-mobile" style="display:none;">
-   
-      <div class="content-mobile">
-        <h1 style="font-size: 20px; text-align: center; color:black"><b>MDIT</b></h1>
-        <h1 style="font-size: 15px; text-align: center; color:black"><b>X</b></h1>
-        <h1 style="font-size: 20px; text-align: center; color:black"><b>DvD 2023</b></h1>
-        <h2 style="font-size: 15px; text-align: center; color:black">MALAYSIA DATA INNOVATION TALENT</h2>
-        <h2 style="font-size: 10px; text-align: center; color:black">X</h2>
-        <h2 style="font-size: 15px; text-align: center; color:black">DOSM VIRTUAL DATATHON 2023</h2>
-        <h2 style="color:white; font-size: 9px; text-align: center;">Smart Data Empower Malaysia's Sustainable Future</h2>
-        <div style="text-align:center; padding: 10px;">
-          <a class="mobile_learnmore" onclick="showabout()">
-          LEARN MORE
-        </a>
-        </div>
-        
-
-      </div>
-    
-
-    <div class="content-mobile">
-      <h3 style="text-align: center;"><b>What is MDIT X DvD 2023 ?</b></h3>
-      <p class="mobile_text" style="font-size: 15px;">Malaysia Data Innovation Talent x DOSM Virtual Datathon 2023 (MDIT x DvD 2023) is a national competition for students from IPTA and IPTS held once every two years to explore and sharpen participants skills in data innovation. MDIT x DvD 2023 focuses on enhancing the use of big data, encouraging participant's critical thinking in data analysis and problem- solving. Participants from various disciplines will work on open data projects and showcase data analysis skills and talents. MDIT x DVD 2023 serves as a pedestal for students to collaborate and engage with diverse stakeholders to impact Sustainable Development Goals (SDGs) progress significantly.</p>
-      <p class="mobile_text" style="font-size: 15px;">We welcome the energetic, ambitious, creative, and innovative participants to join us today!</p>
-    </div>
-
-  </div>
-
-  <div class="about" style="display:none;">
-    <div class="content-mobile">
-      
-
-
-
-
-
-  
-  
-    </div>
-  </div>
-
-  
-</div>
-
-
-
-
-  
-  
-  
-  
-  
-
-<!-- END PAGE CONTENT -->
-</div>
-
-</body>
-</html>
-
-<style>
-  html{
+html{
     scroll-behavior: smooth;
   }
 
@@ -198,6 +35,15 @@ title1{font-weight: 900;}
 
   .container{
     width: 100%;
+  }
+
+  .first-mobile-container{
+    margin-top:30%;
+  }
+
+  .mobile-container{
+    padding-top:10%;
+    padding-bottom:10%
   }
 
   .container2{
@@ -222,6 +68,7 @@ title1{font-weight: 900;}
     /* Center and scale the image nicely */
     background-position: left;
     background-repeat: no-repeat;
+    background-size: cover;
     
   }
 
@@ -265,6 +112,7 @@ title1{font-weight: 900;}
     border-radius: 15px;
   }
 
+
   .nav-bar{
     left: 70px;
     top: 20%;
@@ -307,6 +155,14 @@ title1{font-weight: 900;}
     margin-top: -38%;
     transition: width 1s, transform 1s;
   }
+
+  .robo-hand-mobile{
+    content:url("././sources/hand robo.png");
+    width: 300px;
+    
+    z-index: -1;
+  }
+
 
   .robo-hand:hover{
     width: 620px;
@@ -371,8 +227,10 @@ title1{font-weight: 900;}
     transition: background-color 0.5s, color 0.5s;
     padding: 12px;
     text-decoration:none;
+    text-align: center;
 
   }
+
 
   .mobile_learnmore:hover{
     background-color: #ac77f1;
@@ -395,7 +253,188 @@ title1{font-weight: 900;}
     font-size: 12px;
   }
 
+
+
 </style>
+</head>
+<body>
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+
+<a href="#" class="border w3-hide-small w3-hide-medium">
+</a>
+
+<nav class="nav-bar w3-hide-small w3-hide-medium" >
+  <a onclick="showhome()" class="nav_menu">
+    <h1><b>HOME</b></h1>
+  </a>
+  <a onclick="showabout()" class="nav_menu">
+    <h1><b>ABOUT</b></h1>
+  </a>
+  <a href="" class="nav_menu">
+    <h1><b>CONTACT</b></h1>
+  </a>
+  <a href="" class="nav_menu">
+    <h1><b>PARTNERS</b></h1>
+  </a>
+  <a href="" class="nav_menu">
+    <h1><b>EVENT</b></h1>
+  </a>
+  <a href="" class="nav_menu">
+    <h1><b>FAQ</b></h1>
+  </a>
+  <a href="" class="nav_menu">
+    <h1><b>REGISTRATION</b></h1>
+  </a>
+</nav>
+
+<!-- Page Content -->
+<div>
+
+  <!-- About Section -->
+
+    <div class="countdown" >
+      <div style="text-align: center; ">The registration is now open until: <a id="countdowntime" style="color:greenyellow; background-color:rgb(63, 63, 63); padding: 8px; border-radius: 5px;" ></a>  </div>
+    </div>
+
+
+  <div id="home" style="display:none;">
+      <div class="container w3-hide-small w3-hide-medium">
+          <div class="background1">
+              <div class="outer-container-first">
+                <div class="content-right">
+                  <div class="content1">
+                    <h1 style="font-size: 80px; font-weight: 2000;"><b>MDIT X DvD 2023</b></h1>
+                    <h2 style="margin-bottom:-2.5%;">MALAYSIA DATA INNOVATION TALENT</h2>
+                    <h2 style="font-size: 35px"><b>X</b></h2>
+                    <h2 style="margin-top:-2.5%;">DOSM VIRTUAL DATATHON 2023</h2>
+                    <h3 style="color:white; padding: 30px;"><b>Smart Data Empower Malaysia's Sustainable Future</b></h3>
+                      <a class="learnmore" onclick="showabout()">
+                        LEARN MORE
+                      </a>
+                  </div>
+                  <span class="robo-hand"></span>
+                </div>
+              </div>
+
+              <div class="outer-container-between">
+                <div class="content-right">
+                  <h2 style="font-size: 40px;"><b>What is MDIT X DvD 2023 ?</b></h2>
+                  <p>Malaysia Data Innovation Talent x DOSM Virtual Datathon 2023 (MDIT x DvD 2023) is a national competition for students from IPTA and IPTS held once every two years to explore and sharpen participants skills in data innovation. MDIT x DvD 2023 focuses on enhancing the use of big data, encouraging participant's critical thinking in data analysis and problem- solving. Participants from various disciplines will work on open data projects and showcase data analysis skills and talents. MDIT x DVD 2023 serves as a pedestal for students to collaborate and engage with diverse stakeholders to impact Sustainable Development Goals (SDGs) progress significantly.
+                  </p>
+                  <p>We welcome the energetic, ambitious, creative, and innovative participants to join us today!</p>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+  <div id="about" style="display:none;">
+      <div class="container2 w3-hide-small w3-hide-medium">
+        <div class="background2">
+            <div class="outer-container-first">
+              <div class="content-right">
+                  
+                  
+              </div>
+            </div>  
+        </div>
+      </div>
+  </div>
+
+    
+    
+
+<!-- mobile version-->
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+
+<div class="background-mobile w3-top w3-hide-large">
+
+  <div class="countdownmobile">
+    <div style="text-align: center;">The registration is now open until: <br>
+    <a id="countdowntimemobile" style="color:greenyellow; background-color:rgb(63, 63, 63); padding: 5px; border-radius: 5px;" ></a>  </div>
+  </div>
+
+  <div id="myNavbar">
+    <div class="w3-bar mobile_nav_bar w3-hover-opacity-off w3-center w3-small">
+    <a onclick="showhome()" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a onclick="showabout()"class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a  class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    <a  class="w3-bar-item w3-button" style="width:25% !important">PARTNERS</a>
+    <a  class="w3-bar-item w3-button" style="width:25% !important">EVENT</a>
+    <a  class="w3-bar-item w3-button" style="width:25% !important">FAQ</a>
+    <a  class="w3-bar-item w3-button" style="width:38% !important">REGISTRATION</a>
+    </div>
+  </div>
+
+</div>
+
+
+  <div class="home mobile_only background1-mobile" id="home">
+   
+      <div class="first-mobile-container">
+        <div class="content-mobile mobile-container">
+            <h1 style="font-size: 30px; text-align: center; color:black"><b>MDIT</b></h1>
+            <h1 style="font-size: 15px; text-align: center; color:black"><b>X</b></h1>
+            <h1 style="font-size: 30px; text-align: center; color:black"><b>DvD 2023</b></h1>
+            <h2 style="font-size: 15px; text-align: center; color:black">MALAYSIA DATA INNOVATION TALENT</h2>
+            <h2 style="font-size: 10px; text-align: center; color:black">X</h2>
+            <h2 style="font-size: 15px; text-align: center; color:black">DOSM VIRTUAL DATATHON 2023</h2>
+            <h2 style="color:white; font-size: 12px; text-align: center;">Smart Data Empower Malaysia's Sustainable Future</h2>
+            <div style="text-align: center;">
+            <a class="mobile_learnmore" onclick="showabout()" style="z-index: 0;">
+              LEARN MORE
+            </a>
+              <span class="robo-hand-mobile"></span>
+            
+            </div>
+        </div>
+      </div>
+    
+      <div class="mobile-container">
+        <div class="content-mobile">
+            <h3 style="text-align: center;"><b>What is MDIT X DvD 2023 ?</b></h3>
+            <p class="mobile_text" style="font-size: 15px;">Malaysia Data Innovation Talent x DOSM Virtual Datathon 2023 (MDIT x DvD 2023) is a national competition for students from IPTA and IPTS held once every two years to explore and sharpen participants skills in data innovation. MDIT x DvD 2023 focuses on enhancing the use of big data, encouraging participant's critical thinking in data analysis and problem- solving. Participants from various disciplines will work on open data projects and showcase data analysis skills and talents. MDIT x DVD 2023 serves as a pedestal for students to collaborate and engage with diverse stakeholders to impact Sustainable Development Goals (SDGs) progress significantly.</p>
+            <p class="mobile_text" style="font-size: 15px;">We welcome the energetic, ambitious, creative, and innovative participants to join us today!</p>
+          </div>
+      </div>
+    
+
+  </div>
+
+  <div class="about" style="display:none;">
+    <div class="content-mobile">
+      
+
+
+
+
+
+  
+  
+    </div>
+  </div>
+
+  
+</div>
+
+
+
+
+  
+  
+  
+  
+  
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
+
 <script>
   
   function gotolink(){
