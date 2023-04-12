@@ -15,13 +15,14 @@
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 title1{font-weight: 900;}
 
-.mobile_only{
+.mobile-only{
   display:none;
 }
 
-@media screen and (max-width: 780px) {
-  .mobile_only{
+@media screen and (max-width: 1023px) {
+  .mobile-only{
     display: block;
+    margin-top: 25%;
   }
 }
 
@@ -371,10 +372,10 @@ html{
 
 </div>
 
-
-  <div class="home mobile_only background1-mobile" id="home">
+<div class="background1-mobile">
+  <div class="home mobile-only" id="home">
    
-      <div class="first-mobile-container">
+      <div class="mobile-container">
         <div class="content-mobile mobile-container">
             <h1 style="font-size: 30px; text-align: center; color:black"><b>MDIT</b></h1>
             <h1 style="font-size: 15px; text-align: center; color:black"><b>X</b></h1>
@@ -400,9 +401,12 @@ html{
             <p class="mobile_text" style="font-size: 15px;">We welcome the energetic, ambitious, creative, and innovative participants to join us today!</p>
           </div>
       </div>
-    
-
   </div>
+
+
+
+</div>
+  
 
   <div class="about" style="display:none;">
     <div class="content-mobile">
