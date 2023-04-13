@@ -1,0 +1,242 @@
+
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    title1{font-weight: 900;}
+    
+    .mobile-only{
+      display:none;
+    }
+    
+    @media screen and (max-width: 1020px) {
+      .mobile-only{
+        display: block;
+        margin-top: 25%;
+      }
+    }
+    
+    html{
+        scroll-behavior: smooth;
+      }
+    
+      p{
+        font-size: 20px;
+      }
+    
+      .container{
+        width: 100%;
+      }
+    
+      .first-mobile-container{
+        margin-top:30%;
+      }
+    
+      .mobile-container{
+        padding-top:10%;
+        padding-bottom:10%
+      }
+    
+      .container2{
+        background-color: #b994ea;
+    
+      }
+    
+      .background1{
+        background-image: url("././sources/background.png");
+        height: 100%;
+    
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    
+      .background1-mobile{
+        background-image: url("././sources/background.png");
+        height: 100%;
+    
+        /* Center and scale the image nicely */
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+      }
+    
+      .background2{
+        background-color: #88888860;
+        height: 800px;
+        width: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    
+      .background-mobile{
+        background-color: rgb(0, 0, 0);
+        color: white;
+      } 
+    
+      .content-right{
+        background-color: rgba(0, 0, 0, 0.041);
+        box-sizing: content-box;
+        margin-left: 26%;
+        width: 69%;
+        padding: 20px;
+        border-radius: 15px;
+        transition: background-color 0.8s, color 0.5s;
+      }
+    
+      .content-right:hover{
+        background-color: #8f45f14b;
+        color: white;
+      }
+    
+      .content-mobile{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(0, 0, 0, 0.034);
+        box-sizing: content-box;
+        width: 85%;
+        padding: 15px;
+        border-radius: 15px;
+      }
+    
+    
+      .nav-bar{
+        left: 70px;
+        top: 20%;
+        position: fixed;
+      }
+    
+      body{
+        height:100%;
+        background-color: #000000;
+      }
+    
+      .nav_menu{
+        padding: 2px;
+        text-decoration:none;
+        transition: color 0.2s, text-shadow 0.2s;
+      }
+    
+      .nav_menu:hover{
+        rotate: 5%;
+        text-shadow: 5px 5px #000000ad;
+        color: rgb(255, 255, 255);
+      }
+    
+      .border{
+        content:url("././sources/border.png");
+        width: 600px;
+        top: 10px;
+        left: 0px;
+        position: fixed;
+        transition: width 0.2s;
+      }
+    
+      .border:hover{
+        width: 620px;
+      }
+    
+      .robo-hand{
+        content:url("././sources/hand robo.png");
+        width: 600px;
+        margin-top: -38%;
+        transition: width 1s, transform 1s;
+      }
+    
+      .robo-hand-mobile{
+        content:url("././sources/hand robo.png");
+        width: 300px;
+        
+        z-index: -1;
+      }
+    
+    
+      .robo-hand:hover{
+        width: 620px;
+        rotate: 5%;
+        transform: rotate(3deg);
+      }
+    
+      .content1{
+        text-align: center;
+        margin-left: 37%;
+      }
+    
+      .learnmore{
+        background-color: #7C2AE8;
+        border: rgba(255, 255, 255, 0);
+        border-radius: 35px;
+        height: auto;
+        width: auto;
+        color: white;
+        font-size: 20px;
+        font-style: bold;
+        transition: background-color 0.5s, color 0.5s;
+        padding: 25px;
+        text-decoration:none;
+      }
+    
+      .learnmore:hover{
+        background-color: #ac77f1;
+        color: black;
+      }
+    
+      .outer-container-between{
+        padding-top: 3%;
+        padding-bottom: 5%;
+      }
+    
+      .outer-container-first{
+        padding-top: 10%;
+        padding-bottom: 2%;
+      }
+    
+      .outer-container{
+        padding-top: 9%;
+        padding-bottom: 20%;
+      }
+    
+      .mobile_nav_bar{
+        background-color: #7c2ae870;
+      }
+    
+      .mobile_text{
+        font-size: 15px;
+      }
+    
+      .mobile_learnmore{
+        background-color: #7C2AE8;
+        border: rgba(255, 255, 255, 0);
+        border-radius: 35px;
+        color: white;
+        font-size: 10px;
+        font-style: bold;
+        transition: background-color 0.5s, color 0.5s;
+        padding: 12px;
+        text-decoration:none;
+        text-align: center;
+    
+      }
+    
+    
+      .mobile_learnmore:hover{
+        background-color: #ac77f1;
+        color: black;
+      }
+    
+      .countdown{
+        top:0%;
+        background-color: #ac77f1;
+        width:100%;
+        color:white;
+        padding: 15px;
+        position: fixed;
+      }
+    
+      .countdownmobile{
+        background-color: rgba(0, 0, 0, 0.993);
+        color:white;
+        padding: 10px;
+        font-size: 12px;
+      }
