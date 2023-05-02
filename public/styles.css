@@ -68,9 +68,10 @@
       }
     
       .background2{
-        background-color: #8000bb;
+        background-color: #ad33e5;
+        background-size: cover;
         height: 100%;
-        padding-bottom: 5.5%;
+        padding-bottom: 10%;
         
         /* Center and scale the image nicely */
         background-position: center;
