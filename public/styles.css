@@ -157,6 +157,16 @@
         color: white;
         padding: 28px;
       }
+
+      .content-right-no-hover{
+        background-color: rgba(0, 0, 0, 0.002);
+        box-sizing: content-box;
+        margin-left: 26%;
+        width: 69%;
+        padding: 20px;
+        border-radius: 15px;
+        transition: background-color 0.8s, color 0.5s ,padding 0.5s;
+      }
     
       .content-mobile{
         margin-left: auto;
@@ -278,7 +288,7 @@
       }
     
       .mobile_learnmore{
-        background-color: #7c2ae870;
+        background-color: #7C2AE8;
         border: rgba(255, 255, 255, 0);
         border-radius: 35px;
         color: white;
@@ -415,6 +425,45 @@
       .event-banner{
         content:url("././sources/horizontal\ banner.png");
         width: 1300px;
+      }
+
+      .event-banner-mobile{
+        content:url("././sources/vertical\ banner.png");
+        width: 180px;
+      }
+
+      .phone{
+        content:url("././sources/phone-black.png");
+        width: 300px;
+      }
+      
+      .logo-checklist{
+        content:url("././sources/logos/checklist.png");
+        width: 40px;
+      }
+      .logo-baloon{
+        content:url("././sources/logos/baloon.png");
+        width: 40px;
+      }
+      .logo-board{
+        content:url("././sources/logos/board.png");
+        width: 40px;
+      }
+      .logo-book{
+        content:url("././sources/logos/book.png");
+        width: 40px;
+      }
+      .logo-pie{
+        content:url("././sources/logos/pie.png");
+        width: 40px;
+      }
+      .logo-scissor{
+        content:url("././sources/logos/scissor.png");
+        width: 40px;
+      }
+      .logo-speaker{
+        content:url("././sources/logos/speaker.png");
+        width: 40px;
       }
 
 
