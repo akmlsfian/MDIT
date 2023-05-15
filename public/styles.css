@@ -32,7 +32,8 @@
     
       .mobile-container{
         padding-top:10%;
-        padding-bottom:10%
+        padding-bottom:10%;
+        width: 100%;
       }
 
       .mditxdvd{
@@ -56,6 +57,7 @@
       .background1-mobile{
         background-image: url("././sources/background.png");
         height: 100%;
+        size: 120%;
     
         /* Center and scale the image nicely */
         background-position: left;
@@ -173,7 +175,7 @@
         margin-right: auto;
         background-color: rgba(0, 0, 0, 0.034);
         box-sizing: content-box;
-        width: 85%;
+        width: 80%;
         padding: 35px;
         border-radius: 15px;
       }
