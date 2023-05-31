@@ -5,9 +5,19 @@
     .mobile-only{
       display:none;
     }
+
+    .pc-only{
+      display:none;
+    }
     
     @media screen and (max-width: 1020px) {
       .mobile-only{
+        display: block;
+      }
+    }
+
+    @media screen and (min-width: 1021px) {
+      .pc-only{
         display: block;
       }
     }
@@ -36,12 +46,13 @@
         width: 100%;
       }
 
-      .mditxdvd{
-        content:url("././sources/mditxdvd.png");
+      .mdit{
+        content:url("././sources/mdit.png");
         width: 300px;
         margin-left: auto;
         margin-right: auto;
         align-content: center;
+        padding: 20px;
       }
     
       .background1{
@@ -52,6 +63,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        animation: background-anim 40s ease-in-out infinite;
       }
     
       .background1-mobile{
@@ -63,6 +75,7 @@
         background-position: left;
         background-repeat: no-repeat;
         background-size: cover;
+        animation: background-anim 40s ease-in-out infinite;
         
       }
     
@@ -182,8 +195,9 @@
     
     
       .nav-bar{
-        left: 70px;
-        top: 20%;
+        margin-left: 4%;
+        margin-top: 13%;
+        margin-bottom: auto;
         position: fixed;
       }
     
@@ -193,7 +207,6 @@
       }
     
       .nav_menu{
-        padding: 2px;
         text-decoration:none;
         transition: color 0.2s, text-shadow 0.2s;
       }
@@ -359,7 +372,7 @@
         font-weight: bold;
         text-shadow: 1px 1px 5px  #ffffff;
         margin-left: 80px;
-        color: #8c52ff;
+        color: #000000;
         transition: color 0.2s;
       }
 
@@ -402,7 +415,7 @@
         font-weight: bold;
         text-shadow: 1px 1px 10px #ffffff;
         padding-left: 75px;
-        color : #8c52ff;
+        color : #000000;
         transition: color 0.2s;
       }
 
@@ -467,5 +480,17 @@
         content:url("././sources/logos/speaker.png");
         width: 40px;
       }
+
+      @keyframes background-anim{
+        0%{
+            background-position: 0 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0 50%;
+        }
+    }
 
 
