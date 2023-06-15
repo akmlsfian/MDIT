@@ -353,6 +353,12 @@
         width: 450px;
       }
 
+      .logouitm{
+        content:url("././sources/uitm.png");
+        margin-top: 50px;
+        width: 400px;
+      }
+
       .container-grid {
         margin-left: -120px;
         display: inline-grid;
@@ -437,6 +443,16 @@
         color:rgb(124, 124, 124);
       }
 
+      .uitm{
+        color:white;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      .uitm:hover{
+        color:rgb(124, 124, 124);
+      }
+
       .event-banner{
         content:url("././sources/horizontal\ banner.png");
         width: 1300px;
@@ -448,7 +464,7 @@
       }
 
       .phone{
-        content:url("././sources/phone-black.png");
+        content:url("././sources/phonemdit.png");
         width: 300px;
       }
       
